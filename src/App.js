@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import LayoutPage from './Page/LayoutPage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>테스트 입니다</h1>
-      <h1>테스트 입니다</h1>
-    </div>
+    <>
+      <LayoutPage/>
+    </>
   );
 }
 

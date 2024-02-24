@@ -1,0 +1,30 @@
+.ActionText1,
+.ActionText2 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Moresby";
+}
+
+.tl2Text,
+.tl2Text2 {
+    font-size: 44px;
+    color: black;
+}
+
+.tl2Text2 {
+    display: none;
+}
+
+.text__inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .ti1{
+    margin-bottom: 5px;
+  }
+  
+  .ti3{
+    margin-top: 5px;
+  }
