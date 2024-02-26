@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hyukio/static/css/main.a8d5a486.css",
-    "main.js": "/Hyukio/static/js/main.d485a85f.js",
+    "main.js": "/Hyukio/static/js/main.8c067878.js",
     "static/js/453.b8ac8a9a.chunk.js": "/Hyukio/static/js/453.b8ac8a9a.chunk.js",
     "static/media/Gilbeot_BI.otf": "/Hyukio/static/media/Gilbeot_BI.546c9246017a467d3a8c.otf",
     "static/media/post.jpg": "/Hyukio/static/media/post.18f8806be3d3cccbd87b.jpg",
@@ -12,11 +12,11 @@
     "static/media/logo.svg": "/Hyukio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Hyukio/index.html",
     "main.a8d5a486.css.map": "/Hyukio/static/css/main.a8d5a486.css.map",
-    "main.d485a85f.js.map": "/Hyukio/static/js/main.d485a85f.js.map",
+    "main.8c067878.js.map": "/Hyukio/static/js/main.8c067878.js.map",
     "453.b8ac8a9a.chunk.js.map": "/Hyukio/static/js/453.b8ac8a9a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8d5a486.css",
-    "static/js/main.d485a85f.js"
+    "static/js/main.8c067878.js"
   ]
 }
