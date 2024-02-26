@@ -15,16 +15,16 @@
     display: none;
 }
 
-.text__inner{
+.text__inner {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .ti1{
+}
+
+.ti1 {
     margin-bottom: 5px;
-  }
-  
-  .ti3{
+}
+
+.ti3 {
     margin-top: 5px;
-  }
+}
