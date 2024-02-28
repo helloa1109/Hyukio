@@ -1,14 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Wrapper } from '../style/Layout';
 import { Power1, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { styled } from 'styled-components';
 import "../App.css";
 import "../style/FirstSection.css";
+import Background from "../img/background.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function FirstSection() {
+
+    const [isAnimationRunning, setIsAnimationRunning] = useState(false);
 
     useEffect(() => {
 
@@ -21,89 +24,72 @@ function FirstSection() {
             desc.setAttribute('aria-label', splitText);
         });
 
-        gsap.set('.text__inner .ti2 span', { opacity: 0, xPercent: 0, scale: 5});
+        const ti2Span = document.querySelectorAll('.text__inner .ti2 span');
+        const actionText2 = document.querySelector('.ActionText2');
+        const BackgroundImg = document.querySelector(".BackgroundImg");
 
-        // gsap.set('.ActionText1', { opacity: 0, xPercent: 0 });
-        gsap.set('.ActionText2', { opacity: 0, xPercent: 0 });
-        // gsap.set('.ActionText3', { opacity: 0, xPercent: 0 });
-        
-        // gsap.set(".WrapperOne",{opacity: 0});
-
+        gsap.set(BackgroundImg, { width: '1000px'})
+        gsap.set(ti2Span, { opacity: 0, xPercent: 0, scale: 5 });
+        gsap.set(actionText2, { opacity: 0, xPercent: 0 });
 
         const tl = gsap.timeline();
 
-        tl.to('.text__inner .ti2 span', {
+        tl.to(ti2Span, {
             opacity: 1,
             scale: 1,
             x: 0,
             duration: 1,
             stagger: 0.1,
             ease: Power1.easeInOut,
+            onComplete: () => {
+                setIsAnimationRunning(true);
+            },
         });
 
-        tl.to('.ActionText2', {
+        tl.to(actionText2, {
             opacity: 1,
             duration: 0.6,
             ease: Power1.easeInOut,
         });
 
-        tl.to('.video-container', { opacity: 1, duration: 0.5, ease: Power1.easeIn }, '+=0.5');
-        tl.to('.video', {opacity:1 ,duration: 0.5, ease: Power1.easeIn, width: '100vw', height: '100vh' }, '+=0.5');
-
-        tl.to(".ti2 span", {color: 'white'}, '-=1');
-
-        let panels = gsap.utils.toArray(".one");
-
-        let tops = panels.map(panel => ScrollTrigger.create({ trigger: panel, start: 'top top' }));
-
-        panels.forEach((panel, i) => {
-            ScrollTrigger.create({
-                trigger: panel,
-                start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom btoom",
-                pin: true,
-                pinSpacing: true,
-            });
-        });
-
-        ScrollTrigger.create({
-            snap: {
-                snapTo: (progress, self) => {
-                    let panelStarts = tops.map(st => st.start),
-                        snapScroll = gsap.utils.snap(panelStarts, self.scroll());
-                    return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
-                },
-                duration: 0.5
-            }
-        });
-        
+        document.body.style.overflow = 'hidden';
+        return () => {
+          document.body.style.overflow = 'auto';
+        }
+        // tl.to(ti2Span, { color: 'white' }, '-=1');
     }, []);
 
+    console.log("isAni",isAnimationRunning);
+
     return (
-        <Container1 className='OneSection'>
+        <Container1 className='OneSection' style={{ overflowY: !isAnimationRunning ? 'hidden' : 'scroll'}}>
+            {/* <BackgroundWrapper src={Background} className='BackgroundImg'/> */}
             <Wrapper className='one section'>
                 <Text>
                     <div className='text__inner'>
                         <span className='ActionText2'>New FrontEnd Developer</span>
-                        <div className='ti2 split'>프론트엔드 텍스트 추가</div>
+                        <div className='ti2 split'>Front End Developer</div>
                     </div>
                 </Text>
             </Wrapper>
-             
         </Container1>
     );
 }
 
 const Text = styled.div`
-  height: 100vh;
+  /* width: 50%; */
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* border: 1px solid red; */
 
   div {
-    z-index: 2;
     font-size: 70px;
-    font-family: Pretendard-Regular;
+    /* font-family: Pretendard-Regular; */
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
   }
 `;
 
@@ -113,6 +99,15 @@ const Container1 = styled.div`
     scroll-behavior: smooth;
     scroll-snap-align: center;
     overflow-y: scroll;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
+const BackgroundWrapper = styled.img`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 export default FirstSection;

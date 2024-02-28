@@ -31,7 +31,6 @@ export const Object = styled.div`
     flex-direction: column;
     height: 15vh;        
     width: 100%;
-
     .FirstText,
     .SecondText {
       display: none;
@@ -75,18 +74,27 @@ export const Text = styled.div`
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-top: 20px;
+  margin-top: 21px;
   margin-left: 40px;
 `;
 
 export const SecondText = styled.div`
   font-size: 16px;
   margin-left: 40px;
-  margin-top: 12px;
-  border: 1px solid red;
+  margin-top: 7px;
   width: 80%;
 
   &:hover {
     display: none;
+  }
+`;
+
+export const StyledSecondText = styled(SecondText)`
+
+    color: #ccc;
+
+  .highlighted {
+    color: black;
+    font-weight: 600;
   }
 `;
