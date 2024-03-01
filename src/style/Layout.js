@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    width: 100vw;
+    width: 50%;
     height: 100vh;
 `;
 
@@ -27,7 +27,6 @@ export const Navbar = styled.div`
     color: white;
     font-size: 22px;
     font-weight: 600;
-    
     
     & span {
         cursor: pointer;

@@ -28,3 +28,9 @@
 .ti3 {
     margin-top: 5px;
 }
+
+.OneSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

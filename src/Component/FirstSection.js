@@ -6,6 +6,7 @@ import { styled } from 'styled-components';
 import "../App.css";
 import "../style/FirstSection.css";
 import Background from "../img/background.jpg";
+import ThirdSection from './Slide';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,14 +57,14 @@ function FirstSection() {
         return () => {
           document.body.style.overflow = 'auto';
         }
-        // tl.to(ti2Span, { color: 'white' }, '-=1');
+
     }, []);
 
     console.log("isAni",isAnimationRunning);
 
     return (
         <Container1 className='OneSection' style={{ overflowY: !isAnimationRunning ? 'hidden' : 'scroll'}}>
-            {/* <BackgroundWrapper src={Background} className='BackgroundImg'/> */}
+            <ThirdSection/>
             <Wrapper className='one section'>
                 <Text>
                     <div className='text__inner'>
@@ -99,13 +100,6 @@ const Container1 = styled.div`
     scroll-behavior: smooth;
     scroll-snap-align: center;
     overflow-y: scroll;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-const BackgroundWrapper = styled.img`
     display: flex;
     align-items: center;
     justify-content: center;

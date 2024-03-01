@@ -35,7 +35,16 @@ export const Object = styled.div`
     .SecondText {
       display: none;
     }
-  }
+
+    &:hover {
+      flex: 0;
+
+    }
+
+    &:not(:hover) {
+      flex: 1;
+    }
+}
 `;
 
 export const HoverImageWrapper = styled.div`
