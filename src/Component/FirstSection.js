@@ -5,8 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { styled } from 'styled-components';
 import "../App.css";
 import "../style/FirstSection.css";
-import Background from "../img/background.jpg";
-import ThirdSection from './Slide';
+import Slide from './Slide';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,9 +26,7 @@ function FirstSection() {
 
         const ti2Span = document.querySelectorAll('.text__inner .ti2 span');
         const actionText2 = document.querySelector('.ActionText2');
-        const BackgroundImg = document.querySelector(".BackgroundImg");
 
-        gsap.set(BackgroundImg, { width: '1000px'})
         gsap.set(ti2Span, { opacity: 0, xPercent: 0, scale: 5 });
         gsap.set(actionText2, { opacity: 0, xPercent: 0 });
 
@@ -42,8 +39,13 @@ function FirstSection() {
             duration: 1,
             stagger: 0.1,
             ease: Power1.easeInOut,
+            onStart: () => {
+                setIsAnimationRunning(false);
+                document.body.style.overflow = 'hidden'; 
+            },
             onComplete: () => {
                 setIsAnimationRunning(true);
+                document.body.style.overflow = 'auto';
             },
         });
 
@@ -53,18 +55,13 @@ function FirstSection() {
             ease: Power1.easeInOut,
         });
 
-        document.body.style.overflow = 'hidden';
         return () => {
-          document.body.style.overflow = 'auto';
-        }
-
+            document.body.style.overflow = 'auto';
+        };
     }, []);
 
-    console.log("isAni",isAnimationRunning);
-
     return (
-        <Container1 className='OneSection' style={{ overflowY: !isAnimationRunning ? 'hidden' : 'scroll'}}>
-            <ThirdSection/>
+        <Container1 className='OneSection'>
             <Wrapper className='one section'>
                 <Text>
                     <div className='text__inner'>
@@ -78,17 +75,15 @@ function FirstSection() {
 }
 
 const Text = styled.div`
-  /* width: 50%; */
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* border: 1px solid red; */
 
   div {
     font-size: 70px;
-    /* font-family: Pretendard-Regular; */
     font-family: "Noto Serif", serif;
     font-weight: 500;
   }
@@ -104,4 +99,5 @@ const Container1 = styled.div`
     align-items: center;
     justify-content: center;
 `;
+
 export default FirstSection;

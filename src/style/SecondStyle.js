@@ -31,6 +31,7 @@ export const Object = styled.div`
     flex-direction: column;
     height: 15vh;        
     width: 100%;
+
     .FirstText,
     .SecondText {
       display: none;
@@ -38,7 +39,6 @@ export const Object = styled.div`
 
     &:hover {
       flex: 0;
-
     }
 
     &:not(:hover) {
