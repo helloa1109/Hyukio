@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Hyukio/static/css/main.62ccc809.css",
-    "main.js": "/Hyukio/static/js/main.a9608c06.js",
+    "main.js": "/Hyukio/static/js/main.35f29b2a.js",
     "static/js/453.b8ac8a9a.chunk.js": "/Hyukio/static/js/453.b8ac8a9a.chunk.js",
     "static/media/Gilbeot_BI.otf": "/Hyukio/static/media/Gilbeot_BI.546c9246017a467d3a8c.otf",
+    "static/media/action.png": "/Hyukio/static/media/action.b18ac478255bc0873546.png",
     "static/media/background.jpg": "/Hyukio/static/media/background.53b0f8a1bda0d4d4e0f4.jpg",
     "static/media/post.jpg": "/Hyukio/static/media/post.18f8806be3d3cccbd87b.jpg",
     "static/media/hand.jpg": "/Hyukio/static/media/hand.e761c127dc3edf238541.jpg",
@@ -13,11 +14,11 @@
     "static/media/logo.svg": "/Hyukio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Hyukio/index.html",
     "main.62ccc809.css.map": "/Hyukio/static/css/main.62ccc809.css.map",
-    "main.a9608c06.js.map": "/Hyukio/static/js/main.a9608c06.js.map",
+    "main.35f29b2a.js.map": "/Hyukio/static/js/main.35f29b2a.js.map",
     "453.b8ac8a9a.chunk.js.map": "/Hyukio/static/js/453.b8ac8a9a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.62ccc809.css",
-    "static/js/main.a9608c06.js"
+    "static/js/main.35f29b2a.js"
   ]
 }
