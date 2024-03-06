@@ -3,11 +3,6 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
 `;
 
 export const Wrapper = styled.div`

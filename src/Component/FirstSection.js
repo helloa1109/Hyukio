@@ -93,8 +93,6 @@ const Container1 = styled.div`
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
-    scroll-snap-align: center;
-    overflow-y: scroll;
     display: flex;
     align-items: center;
     justify-content: center;

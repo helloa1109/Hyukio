@@ -4,6 +4,7 @@ import FirstSection from '../Component/FirstSection';
 import SecondSection from "../Component/SecondSection";
 import ThirdSection from '../Component/ThirdSection';
 import FourSection from '../Component/FourSection';
+import FiveSection from '../Component/FiveSection';
 function LayoutPage(props) {
     return (
         <Container>
@@ -11,6 +12,7 @@ function LayoutPage(props) {
             <SecondSection/>
             <ThirdSection/>
             <FourSection/>
+            <FiveSection/>
         </Container>
     );
 }

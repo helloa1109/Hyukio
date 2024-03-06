@@ -1,11 +1,7 @@
 import { styled } from "styled-components"
 
 export const ThirdContainer = styled.div`
-    overflow: hidden;
     scroll-behavior: smooth;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;  
     width: 100vw;
     height: 100vh;
     display: flex;

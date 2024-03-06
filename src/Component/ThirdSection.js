@@ -20,15 +20,15 @@ function ThirdSection(props) {
             <BoxWrapper>
                 <ProjectBox color="#FEACBF" className='project-box' onClick={()=> handleProjectClick('https://github.com/helloa1109/goodseul')}>
                     <span>GoodSeul</span>
-                    <HoveredImage src={img1} />
+                    <HoveredImage src={img1} alt='img1'/>
                 </ProjectBox>
                 <ProjectBox color="#FEBF5B" className='project-box' onClick={()=> handleProjectClick('https://github.com/helloa1109/wepli')}>
                     <span>Wepli</span>
-                    <HoveredImage src={img1} />
+                    <HoveredImage src={img1} alt='img2'/>
                 </ProjectBox>
                 <ProjectBox color="#A0E57E" className='project-box' onClick={()=> handleProjectClick('https://github.com/helloa1109/Dreamstay')}>
                     <span>DreamStay</span>
-                    <HoveredImage src={img1} />
+                    <HoveredImage src={img1} alt='img3'/>
                 </ProjectBox>
             </BoxWrapper>
         </ThirdContainer>
