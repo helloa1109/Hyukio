@@ -24,7 +24,7 @@ function FourSection(props) {
     gsap.to(textRef.current, {
       textContent: (3300 < scrollY && scrollY < 3300) ? '안녕하세요.' :
                    (3400 < scrollY && scrollY < 3500) ? '텍스트 작성하는중' :
-                   (3500 < scrollY && scrollY < 3600) ? '텍스트를 테스트' :
+                   (3500 < scrollY && scrollY < 3500) ? '텍스트를 테스트' :
                    '변경될 텍스트',
       duration: 0.4,
       ease: 'power4.out',
@@ -39,7 +39,7 @@ function FourSection(props) {
         <span className={(3000 < scrollY && scrollY < 3300) ? 'show' : 'hide'}>안녕하세요.</span>
         <span className={(3150 < scrollY && scrollY < 3500) ? 'show' : 'hide'}>텍스트 작성하는중</span>
         <span className={(3300 < scrollY && scrollY < 3600) ? 'show' : 'hide'}>텍스트를 테스트</span>
-        <span ref={textRef}>안녕하세요.</span>
+        <span ref={textRef} className={textRef.current.textContent === '변경될 텍스트' ? 'hide' : 'show'}/>
       </Wrapper>
     </Container>
   );
