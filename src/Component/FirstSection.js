@@ -32,6 +32,10 @@ function FirstSection() {
 
         const tl = gsap.timeline();
 
+        /*
+            애니메이션 종료 후 
+            스크롤 가능하게
+        */
         tl.to(ti2Span, {
             opacity: 1,
             scale: 1,

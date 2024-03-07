@@ -6,8 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '../style/Slide.css';
 import img1 from "../img/background.jpg";
-import img2 from "../img/hand.jpg";
-import img3 from "../img/post.jpg";
+
 
 function ThirdSection(props) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,19 +39,19 @@ function ThirdSection(props) {
                     <img src={img1} alt='img1'/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img2} alt='img1'/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={img3} alt='img1'/>
+                    <img src={img1} alt='img1'/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={img1} alt='img1'/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img2} alt='img1'/>
+                    <img src={img1} alt='img1'/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img3} alt='img1'/>
+                    <img src={img1} alt='img1'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={img1} alt='img1'/>
                 </SwiperSlide>
             
             </Swiper>

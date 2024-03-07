@@ -7,14 +7,20 @@ import ThirdSection from './Component/ThirdSection';
 import FourSection from './Component/FourSection';
 import FiveSection from './Component/FiveSection';
 import { Container } from './style/Layout';
+import Navbar from './Component/Navbar';
 
 function App() {
   return (
     <Container>
+      {/* <Navbar/> */}
+      <>
       <FirstSection />
       <SecondSection />
       <ThirdSection />
       <FourSection />
+      </>
+      
+
     </Container>
   );
 }
