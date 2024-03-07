@@ -43,14 +43,6 @@ function FirstSection() {
             duration: 1,
             stagger: 0.1,
             ease: Power1.easeInOut,
-            onStart: () => {
-                setIsAnimationRunning(false);
-                document.body.style.overflow = 'hidden'; 
-            },
-            onComplete: () => {
-                setIsAnimationRunning(true);
-                document.body.style.overflow = 'auto';
-            },
         });
 
         tl.to(actionText2, {
@@ -59,9 +51,6 @@ function FirstSection() {
             ease: Power1.easeInOut,
         });
 
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
     }, []);
 
     return (
