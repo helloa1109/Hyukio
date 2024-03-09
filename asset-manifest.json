@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hyukio/static/css/main.d69121b0.css",
-    "main.js": "/Hyukio/static/js/main.1e1ad467.js",
+    "main.js": "/Hyukio/static/js/main.4189b1a4.js",
     "static/js/453.b8ac8a9a.chunk.js": "/Hyukio/static/js/453.b8ac8a9a.chunk.js",
     "static/media/trend.jpg": "/Hyukio/static/media/trend.94b0354f850ee5430b9f.jpg",
     "static/media/vision.jpg": "/Hyukio/static/media/vision.bc278c9fb8183d732363.jpg",
@@ -17,11 +17,11 @@
     "static/media/logo.svg": "/Hyukio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Hyukio/index.html",
     "main.d69121b0.css.map": "/Hyukio/static/css/main.d69121b0.css.map",
-    "main.1e1ad467.js.map": "/Hyukio/static/js/main.1e1ad467.js.map",
+    "main.4189b1a4.js.map": "/Hyukio/static/js/main.4189b1a4.js.map",
     "453.b8ac8a9a.chunk.js.map": "/Hyukio/static/js/453.b8ac8a9a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d69121b0.css",
-    "static/js/main.1e1ad467.js"
+    "static/js/main.4189b1a4.js"
   ]
 }
