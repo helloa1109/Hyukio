@@ -18,10 +18,25 @@ export const Object = styled.div`
   position: relative;
   transition: flex 0.7s ease;
 
+  &:hover {
+    flex: 1.4;
+
+    @media (min-width: 769px) {
+      .HoverImg {
+        height: 100vh;
+      }
+
+      .FirstText {
+        display: none;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     height: 20vh;
     width: 100%;
+  
 
     .FirstText,
     .SecondText {
@@ -34,13 +49,24 @@ export const Object = styled.div`
     }
 
     &:hover {
-      flex: 0;
+      @media (min-width: 769px) {
+        flex: 0;
+      }
     }
 
     &:not(:hover) {
-      flex: 0;
+      @media (min-width: 769px) {
+        flex: 0;
+      }
     }
   }
+`;
+
+export const TextWrapper = styled.div`
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const HoverImageWrapper = styled.div`
@@ -100,6 +126,7 @@ export const SecondText = styled.div`
   margin-left: 40px;
   margin-top: 7px;
   width: 80%;
+
 
   @media (max-width: 768px) {
     position: absolute;

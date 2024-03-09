@@ -38,7 +38,7 @@ const Project2 = (props) => {
     return (
         <SecondContainer className='ScrollContainer'>
             {projects.map((project, index) => (
-                <Object key={index}>
+                <Object key={index} className='Object'>
                     <HoverImageWrapper>
                         <HoverImage src={project.image} alt='img' className='HoverImg' />
                     </HoverImageWrapper>
