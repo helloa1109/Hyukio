@@ -5,7 +5,6 @@ export const SecondContainer = styled.div`
   height: 100vh;
   background-color: white;
   display: flex;
-  scroll-snap-align: center;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -19,22 +18,19 @@ export const Object = styled.div`
   position: relative;
   transition: flex 0.7s ease;
 
-  &:hover {
-    flex: 1.4;
-
-    .HoverImg {
-      height: 100vh;
-    }
-  }
-
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 15vh;        
+    height: 20vh;
     width: 100%;
 
     .FirstText,
     .SecondText {
-      display: none;
+      display: block;
+      margin-left: 0; 
+    }
+
+    .HoverImageWrapper {
+      height: 100%;
     }
 
     &:hover {
@@ -42,9 +38,9 @@ export const Object = styled.div`
     }
 
     &:not(:hover) {
-      flex: 1;
+      flex: 0;
     }
-}
+  }
 `;
 
 export const HoverImageWrapper = styled.div`
@@ -56,8 +52,8 @@ export const HoverImageWrapper = styled.div`
   display: flex;
 
   @media (max-width: 768px) {
-    height: 100%;        
-}
+    height: 100%;
+  }
 `;
 
 export const HoverImage = styled.img`
@@ -73,6 +69,11 @@ export const HoverImage = styled.img`
 
   @media (max-width: 768px) {
     height: 100%;
+    filter: brightness(60%) blur(0); 
+
+    ${Object}:hover & {
+      filter: brightness(60%) blur(0); 
+    }
   }
 `;
 
@@ -85,6 +86,13 @@ export const Text = styled.div`
   color: #333;
   margin-top: 21px;
   margin-left: 40px;
+  z-index: 1; 
+
+  @media (max-width: 768px) {
+    position: absolute;
+    color: white;
+    left: 5%;
+  }
 `;
 
 export const SecondText = styled.div`
@@ -93,17 +101,24 @@ export const SecondText = styled.div`
   margin-top: 7px;
   width: 80%;
 
-  &:hover {
-    display: none;
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 40%;
+    left: 5%;
   }
 `;
 
 export const StyledSecondText = styled(SecondText)`
-
-    color: #ccc;
+  color: #ccc;
 
   .highlighted {
     color: black;
     font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .highlighted {
+      color: white;
+    }
   }
 `;

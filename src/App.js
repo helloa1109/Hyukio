@@ -10,17 +10,13 @@ import { Container } from './style/Layout';
 import Navbar from './Component/Navbar';
 
 function App() {
+
   return (
     <Container>
-      {/* <Navbar/> */}
-      <>
       <FirstSection />
       <SecondSection />
       <ThirdSection />
       <FourSection />
-      </>
-      
-
     </Container>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { styled } from 'styled-components';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import img1 from "../img/meet.jpg";
@@ -45,9 +44,9 @@ const Project2 = (props) => {
                     </HoverImageWrapper>
                     <Text className='FirstText'>{project.title}</Text>
                     <StyledSecondText className='SecondText'>
-                    {project.description.split(' ').map((word, i) => (
-                        <span key={i} className={targetWords.some(targetWord => word.includes(targetWord)) ? 'highlighted' : ''}>{word} </span>
-                    ))}
+                        {project.description.split(' ').map((word, i) => (
+                            <span key={i} className={targetWords.some(targetWord => word.includes(targetWord)) ? 'highlighted' : ''}>{word} </span>
+                        ))}
                     </StyledSecondText>
                 </Object>
             ))}

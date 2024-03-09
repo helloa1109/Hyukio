@@ -31,7 +31,7 @@ function FourSection(props) {
     });
   }, [scrollY]);
 
-  console.log("스크롤 Y", scrollY);
+  console.log("스크롤 값",scrollY);
 
   return (
     <Container className="FourSection">

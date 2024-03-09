@@ -5,10 +5,9 @@ export const ThirdContainer = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;  
     flex-direction: column;
-
 
   @media (max-width: 768px) {
     justify-content: space-around;
@@ -48,15 +47,15 @@ export const TextWrapper = styled.div`
     }
 
     @media (max-width: 990px) {
-    top: 0;
-    margin-left: 10px;
-  }
+        position:relative;
+        top: 0;
+    }
 `;
 
 export const ProjectBox = styled.div`
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 400px;
     border: 1px solid black;
     ${({ color }) =>
@@ -95,13 +94,7 @@ export const ProjectBox = styled.div`
       opacity: 1;
     }
   }
-
-  @media (max-width: 768px) {
-    width: 50vw;
-    height: 50vw;
-  }
 `;
-
 
 export const HoveredImage = styled.img`
   position: relative;

@@ -5,7 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { styled } from 'styled-components';
 import "../App.css";
 import "../style/FirstSection.css";
-import Slide from './Slide';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +53,7 @@ function FirstSection() {
     }, []);
 
     return (
-        <Container1 className='OneSection'>
+        <Container1 className='SectionOne'>
             <Wrapper className='one section'>
                 <Text>
                     <div className='text__inner'>
@@ -74,7 +73,7 @@ const Text = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-
+    color: white;
   div {
     font-size: 70px;
     font-family: "Noto Serif", serif;
@@ -89,6 +88,7 @@ const Container1 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
 `;
 
 export default FirstSection;
