@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { Grid } from '@mui/material';  // Import Grid from Material-UI
+import React  from 'react';
+import { Grid } from '@mui/material';
 import { BoxWrapper, HoveredImage, ProjectBox, TextWrapper, ThirdContainer } from '../style/ThirdStyle';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
