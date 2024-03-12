@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Grid } from '@mui/material';  // Import Grid from Material-UI
 import { BoxWrapper, HoveredImage, ProjectBox, TextWrapper, ThirdContainer } from '../style/ThirdStyle';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -9,7 +10,7 @@ function ThirdSection(props) {
 
     const handleProjectClick = (url) => {
         window.open(url, '_blank');
-      };
+    };
 
     return (
         <ThirdContainer className='ThirdContainer' id="section3">
@@ -18,18 +19,20 @@ function ThirdSection(props) {
                 <span>Click the Object!</span>
             </TextWrapper>
             <BoxWrapper>
-                <ProjectBox color="#FEACBF" className='project-box' onClick={()=> handleProjectClick('https://github.com/helloa1109/goodseul')}>
-                    <span>GoodSeul</span>
-                    <HoveredImage src={img1} alt='img1'/>
-                </ProjectBox>
-                <ProjectBox color="#FEBF5B" className='project-box' onClick={()=> handleProjectClick('https://github.com/helloa1109/wepli')}>
-                    <span>Wepli</span>
-                    <HoveredImage src={img1} alt='img2'/>
-                </ProjectBox>
-                <ProjectBox color="#A0E57E" className='project-box' onClick={()=> handleProjectClick('https://github.com/helloa1109/Dreamstay')}>
-                    <span>DreamStay</span>
-                    <HoveredImage src={img1} alt='img3'/>
-                </ProjectBox>
+                <Grid container spacing={1} justifyContent="center" >
+                        <ProjectBox color="#FEACBF" className='project-box' onClick={() => handleProjectClick('https://github.com/helloa1109/goodseul')}>
+                            <span>GoodSeul</span>
+                            <HoveredImage src={img1} alt='img1' />
+                        </ProjectBox>
+                        <ProjectBox color="#FEBF5B" className='project-box' onClick={() => handleProjectClick('https://github.com/helloa1109/wepli')}>
+                            <span>Wepli</span>
+                            <HoveredImage src={img1} alt='img2' />
+                        </ProjectBox>
+                        <ProjectBox color="#A0E57E" className='project-box' onClick={() => handleProjectClick('https://github.com/helloa1109/Dreamstay')}>
+                            <span>DreamStay</span>
+                            <HoveredImage src={img1} alt='img13' />
+                        </ProjectBox>
+                </Grid>
             </BoxWrapper>
         </ThirdContainer>
     );

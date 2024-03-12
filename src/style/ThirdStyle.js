@@ -32,6 +32,7 @@ export const TextWrapper = styled.div`
     width: 100vw;
     font-style: normal;     
     font-stretch: normal;
+    transition: all 0.5s ease;
 
     span:first-child{ 
         font-family: "Poppins";
@@ -49,18 +50,28 @@ export const TextWrapper = styled.div`
     @media (max-width: 990px) {
         position:relative;
         top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media (max-width: 400px) {
+        span:first-child {
+            font-size: 40px;
+        }
     }
 `;
 
 export const ProjectBox = styled.div`
     position: relative;
-    width: 20vw;
-    height: 20vw;
+    width: 320px;
+    height: 320px;
     border-radius: 400px;
     border: 1px solid black;
     ${({ color }) =>
-        color &&
-        `
+    color &&
+    `
         background: radial-gradient(circle, ${color} 0%, transparent 70%);
         `}
     backdrop-filter: blur(300px);
@@ -77,15 +88,16 @@ export const ProjectBox = styled.div`
     font-stretch: normal;
     letter-spacing: 0.2px;
     transition: all 0.3s ease; 
-  img {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
+
+    img {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
 
   &:hover {
     cursor: pointer;
@@ -94,6 +106,17 @@ export const ProjectBox = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 990px) { 
+    width: 220px;
+    height: 220px;
+  }
+
+  @media (max-width: 400px) {
+    width: 160px;
+    height: 160px;
+  }
+
 `;
 
 export const HoveredImage = styled.img`

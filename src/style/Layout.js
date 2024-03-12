@@ -6,8 +6,16 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    width: 50%;
-    height: 100vh;
+    width: 34%;
+    height: 70vh;
+    color: white;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 270px;
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 20px 20px;
+    z-index: 2;
 `;
 
 export const Navbar = styled.div`

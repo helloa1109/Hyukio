@@ -1,8 +1,9 @@
 .ActionText1,
 .ActionText2 {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: 600;
-    font-family: "Moresby";
+    font-family: "Raw";
+    letter-spacing: 4px;
 }
 
 .tl2Text,
@@ -33,4 +34,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
 }
+
+.Background {
+    background: url('../img/background1.jpg') center/cover no-repeat; 
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 20px 20px;
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+}
+

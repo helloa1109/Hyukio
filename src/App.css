@@ -40,6 +40,21 @@
   src: url('./font/NimbusSanL-Bol.otf');
 }
 
+@font-face{
+  font-family: 'Botera';
+  src: url('./font/Botera-Regular.otf');
+}
+
+@font-face{
+  font-family: 'Anticva';
+  src: url('./font/Anticva-Regular.otf');
+}
+
+@font-face{
+  font-family: 'Raw';
+  src: url('./font/Rawengulksans-MMOe.ttf');
+}
+
 /* 
   모바일 환경 빈공간 발생
 */

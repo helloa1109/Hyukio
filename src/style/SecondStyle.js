@@ -63,7 +63,6 @@ export const Object = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
