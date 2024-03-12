@@ -3,7 +3,8 @@ import { Power1, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { styled } from 'styled-components';
 import '../App.css';
-import "../style/FirstSection.css";
+import '../style/FirstSection.css';
+import { CircleGroup, Container1, Text } from '../style/FirstStyle';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,11 +13,12 @@ function FirstSection() {
   const circleGroupRef = useRef(null);
 
   useEffect(() => {
-    /* 첫번째 영역 */
     document.querySelectorAll('.split').forEach((desc) => {
-      let splitText = desc.innerText;
-      let splitWrap = splitText.split('').join('</span><span aria-hidden="true">');
-      splitWrap = `<span aria-hidden="true">${splitWrap}</span>`;
+      const splitText = desc.innerText;
+      const splitWrap = splitText
+        .split('')
+        .map((char) => `<span aria-hidden="true">${char}</span>`)
+        .join('');
       desc.innerHTML = splitWrap;
       desc.setAttribute('aria-label', splitText);
     });
@@ -55,18 +57,18 @@ function FirstSection() {
     const tlCircleGroup = gsap.timeline({
       scrollTrigger: {
         trigger: circleGroupRef.current,
-        start: 'top center', 
+        start: 'top center',
         end: '+=100%',
         scrub: true,
         duration: 1,
       },
     });
 
-    tlCircleGroup.fromTo(circleGroupRef.current, { scale: 1 }, { scale: 7 });
+    tlCircleGroup.fromTo(circleGroupRef.current, { scale: 1 }, { scale: 5 });
 
     return () => {
       document.body.style.overflow = 'auto';
-      tl.kill(); 
+      tl.kill();
       tlCircleGroup.kill();
     };
   }, []);
@@ -82,64 +84,9 @@ function FirstSection() {
           </div>
         </div>
       </Text>
-      <CircleGroup ref={circleGroupRef} />
+      <CircleGroup ref={circleGroupRef} className='CircleGroup' />
     </Container1>
   );
 }
-
-const Text = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  color: white;
-
-  .splitStar {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .split {
-    font-family: 'Anticva';
-    letter-spacing: 80px;
-    font-size: 140px;
-    font-weight: lighter;
-  }
-
-  .star {
-    font-family: 'Raw';
-    font-size: 100px;
-  }
-`;
-
-const Container1 = styled.div`
-  width: 100vw;
-  height: 100vh;
-  scroll-behavior: smooth;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-`;
-
-const CircleGroup = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: #4568DC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-`;
 
 export default FirstSection;

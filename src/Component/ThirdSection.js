@@ -3,7 +3,9 @@ import { Grid } from '@mui/material';  // Import Grid from Material-UI
 import { BoxWrapper, HoveredImage, ProjectBox, TextWrapper, ThirdContainer } from '../style/ThirdStyle';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import img1 from "../img/background.jpg";
+import DreamStay from "../img/dreamstay.png";
+import GoodSeul from "../img/goodseullogo.png";
+import Wepli from "../img/wplieonlylogo.png";
 gsap.registerPlugin(ScrollTrigger);
 
 function ThirdSection(props) {
@@ -22,15 +24,15 @@ function ThirdSection(props) {
                 <Grid container spacing={1} justifyContent="center" >
                         <ProjectBox color="#FEACBF" className='project-box' onClick={() => handleProjectClick('https://github.com/helloa1109/goodseul')}>
                             <span>GoodSeul</span>
-                            <HoveredImage src={img1} alt='img1' />
+                            <HoveredImage src={GoodSeul} alt='img1' />
                         </ProjectBox>
                         <ProjectBox color="#FEBF5B" className='project-box' onClick={() => handleProjectClick('https://github.com/helloa1109/wepli')}>
                             <span>Wepli</span>
-                            <HoveredImage src={img1} alt='img2' />
+                            <HoveredImage src={Wepli} alt='img2' />
                         </ProjectBox>
                         <ProjectBox color="#A0E57E" className='project-box' onClick={() => handleProjectClick('https://github.com/helloa1109/Dreamstay')}>
                             <span>DreamStay</span>
-                            <HoveredImage src={img1} alt='img13' />
+                            <HoveredImage src={DreamStay} alt='img13' />
                         </ProjectBox>
                 </Grid>
             </BoxWrapper>
