@@ -80,7 +80,7 @@ function FirstSection() {
           <span className='ActionText2'>Hi! I'm Sang Hyuk Lee</span>
           <div className='splitStar'>
             <span className='ti2 split'>Front End</span>
-            <span className='star' ref={circleGroupRef}>*</span>
+            <span className='star' >*</span>
           </div>
         </div>
       </Text>

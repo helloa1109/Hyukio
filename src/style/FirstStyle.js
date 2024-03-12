@@ -49,6 +49,7 @@ export const CircleGroup = styled.div`
   height: 300px;
   border-radius: 50%;
   background: #4568DC;  
-background: -webkit-linear-gradient(to right, #B06AB3, #4568DC); 
-background: linear-gradient(to right, #B06AB3, #4568DC); 
-`;
+  will-change: transform;
+/* background: -webkit-linear-gradient(to right, #B06AB3, #4568DC); 
+background: linear-gradient(to right, #B06AB3, #4568DC); */
+`; 
