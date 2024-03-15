@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/Hyukio/static/css/main.c36c1364.css",
-    "main.js": "/Hyukio/static/js/main.1347e333.js",
+    "main.css": "/Hyukio/static/css/main.cdb0fb65.css",
+    "main.js": "/Hyukio/static/js/main.eb795f99.js",
     "static/js/453.312f2acc.chunk.js": "/Hyukio/static/js/453.312f2acc.chunk.js",
-    "static/media/trend.jpg": "/Hyukio/static/media/trend.94b0354f850ee5430b9f.jpg",
-    "static/media/vision.jpg": "/Hyukio/static/media/vision.bc278c9fb8183d732363.jpg",
+    "static/media/trend.webp": "/Hyukio/static/media/trend.94b0354f850ee5430b9f.webp",
+    "static/media/vision.webp": "/Hyukio/static/media/vision.bc278c9fb8183d732363.webp",
     "static/media/Gilbeot_BI.otf": "/Hyukio/static/media/Gilbeot_BI.546c9246017a467d3a8c.otf",
-    "static/media/meet.jpg": "/Hyukio/static/media/meet.1d9d84159ebca72e445b.jpg",
-    "static/media/goodseullogo.png": "/Hyukio/static/media/goodseullogo.877ad0df5a3717e685fb.png",
-    "static/media/design.jpg": "/Hyukio/static/media/design.db2527729278a857524c.jpg",
+    "static/media/meet.webp": "/Hyukio/static/media/meet.1d9d84159ebca72e445b.webp",
+    "static/media/goodseullogo.webp": "/Hyukio/static/media/goodseullogo.877ad0df5a3717e685fb.webp",
+    "static/media/design.webp": "/Hyukio/static/media/design.db2527729278a857524c.webp",
     "static/media/Pretendard-ExtraBold.otf": "/Hyukio/static/media/Pretendard-ExtraBold.fa944c3a241cdef4584a.otf",
-    "static/media/dreamstay.png": "/Hyukio/static/media/dreamstay.ef2e404dd31730a1fd55.png",
-    "static/media/challenge.jpg": "/Hyukio/static/media/challenge.39022b1dfb84493d8d22.jpg",
+    "static/media/dreamstay.webp": "/Hyukio/static/media/dreamstay.ef2e404dd31730a1fd55.webp",
+    "static/media/challenge.webp": "/Hyukio/static/media/challenge.39022b1dfb84493d8d22.webp",
     "static/media/Rawengulksans-MMOe.ttf": "/Hyukio/static/media/Rawengulksans-MMOe.31b6611e0a4f2fd375ae.ttf",
     "static/media/PartialSansKR-Regular.otf": "/Hyukio/static/media/PartialSansKR-Regular.3788df4812a626e9a2ca.otf",
-    "static/media/wplieonlylogo.png": "/Hyukio/static/media/wplieonlylogo.5c7110c44cc974b0620b.png",
+    "static/media/wplieonlylogo.webp": "/Hyukio/static/media/wplieonlylogo.5c7110c44cc974b0620b.webp",
     "static/media/Anticva-Regular.otf": "/Hyukio/static/media/Anticva-Regular.a9efec9eeaac12c5bdfa.otf",
     "static/media/NimbusSanL-Bol.otf": "/Hyukio/static/media/NimbusSanL-Bol.04a8e991af75198247cf.otf",
     "static/media/Botera-Regular.otf": "/Hyukio/static/media/Botera-Regular.23097c26c0daa1323cc0.otf",
     "static/media/logo.svg": "/Hyukio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Hyukio/index.html",
-    "main.c36c1364.css.map": "/Hyukio/static/css/main.c36c1364.css.map",
-    "main.1347e333.js.map": "/Hyukio/static/js/main.1347e333.js.map",
+    "main.cdb0fb65.css.map": "/Hyukio/static/css/main.cdb0fb65.css.map",
+    "main.eb795f99.js.map": "/Hyukio/static/js/main.eb795f99.js.map",
     "453.312f2acc.chunk.js.map": "/Hyukio/static/js/453.312f2acc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c36c1364.css",
-    "static/js/main.1347e333.js"
+    "static/css/main.cdb0fb65.css",
+    "static/js/main.eb795f99.js"
   ]
 }
