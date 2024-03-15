@@ -3,9 +3,9 @@ import { Grid } from '@mui/material';
 import { BoxWrapper, HoveredImage, ProjectBox, TextWrapper, ThirdContainer } from '../style/ThirdStyle';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import DreamStay from "../img/dreamstay.png";
-import GoodSeul from "../img/goodseullogo.png";
-import Wepli from "../img/wplieonlylogo.png";
+import DreamStay from "../img/dreamstay.webp";
+import GoodSeul from "../img/goodseullogo.webp";
+import Wepli from "../img/wplieonlylogo.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 function ThirdSection(props) {

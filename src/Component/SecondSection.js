@@ -2,11 +2,11 @@ import React, { useMemo } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { HoverImage, HoverImageWrapper, Object, SecondContainer, StyledSecondText, Text } from '../style/SecondStyle';
-import img1 from "../img/meet.jpg";
-import img2 from "../img/design.jpg";
-import img3 from "../img/challenge.jpg";
-import img4 from "../img/trend.jpg";
-import img5 from "../img/vision.jpg";
+import img1 from "../img/meet.webp";
+import img2 from "../img/design.webp";
+import img3 from "../img/challenge.webp";
+import img4 from "../img/trend.webp";
+import img5 from "../img/vision.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const Project2 = (props) => {
@@ -41,7 +41,12 @@ const Project2 = (props) => {
             {projects.map((project, index) => (
                 <Object key={index} className='Object'>
                     <HoverImageWrapper>
-                        <HoverImage src={project.image} alt='img' className='HoverImg' />
+                        <HoverImage
+                            src={project.image}
+                            alt='img'
+                            className='HoverImg'
+                            loading='lazy'
+                        />
                     </HoverImageWrapper>
                     <Text className='FirstText'>{project.title}</Text>
                     <StyledSecondText className='SecondText'>

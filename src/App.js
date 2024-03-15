@@ -4,6 +4,8 @@ import FirstSection from './Component/FirstSection';
 import SecondSection from "./Component/SecondSection";
 import ThirdSection from './Component/ThirdSection';
 import Navbar from './Component/Navbar';
+import Footer from './Component/FiveSection';
+import FourSection from './Component/FourSection';
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <FourSection/>
+      <Footer/>
     </>
   );
 }
