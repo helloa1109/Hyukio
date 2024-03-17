@@ -12,6 +12,12 @@
     color: black;
 }
 
+.split,
+.star,
+.ActionText2 {
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+}
+
 .tl2Text2 {
     display: none;
 }

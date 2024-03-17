@@ -1,0 +1,10 @@
+
+.Slide::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .Slide {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    overflow: hidden;
+  }
