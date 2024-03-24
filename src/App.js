@@ -14,7 +14,7 @@ function App() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-      <FourSection/>
+      {/* <FourSection/> */}
       <Footer/>
     </Page>
   );

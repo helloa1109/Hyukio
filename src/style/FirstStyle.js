@@ -2,7 +2,7 @@ import { styled } from "styled-components"
 
 export const Text = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,17 +39,3 @@ export const Container1 = styled.div`
   justify-content: center;
   position: relative;
 `;
-
-export const CircleGroup = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: #4568DC;  
-  will-change: transform;
-/* background: -webkit-linear-gradient(to right, #B06AB3, #4568DC); 
-background: linear-gradient(to right, #B06AB3, #4568DC); */
-`; 

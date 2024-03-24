@@ -75,14 +75,14 @@ export const HoverImageWrapper = styled.div`
   width: 100%;
   transition: width 0.5s ease;
   display: flex;
-
+  
   @media (max-width: 768px) {
     height: 100%;
   }
 `;
 
 export const HoverImage = styled.img`
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(10%) blur(1px);

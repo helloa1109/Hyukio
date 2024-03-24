@@ -1,16 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Power1, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { styled } from 'styled-components';
 import '../App.css';
 import '../style/FirstSection.css';
-import { CircleGroup, Container1, Text } from '../style/FirstStyle';
+import { Container1, Text } from '../style/FirstStyle';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function FirstSection() {
   const [isAnimationRunning, setIsAnimationRunning] = useState(false);
-  const circleGroupRef = useRef(null);
 
   useEffect(() => {
     document.querySelectorAll('.split').forEach((desc) => {
@@ -54,28 +52,14 @@ function FirstSection() {
       ease: Power1.easeInOut,
     });
 
-    const tlCircleGroup = gsap.timeline({
-      scrollTrigger: {
-        trigger: circleGroupRef.current,
-        start: 'top center',
-        end: '+=100%',
-        scrub: true,
-        duration: 1,
-      },
-    });
-
-    tlCircleGroup.fromTo(circleGroupRef.current, { scale: 1 }, { scale: 5 });
-
     return () => {
       document.body.style.overflow = 'auto';
-      tl.kill();
-      tlCircleGroup.kill();
     };
   }, []);
 
   return (
     <Container1 className='SectionOne'>
-      <Text>
+      <Text className='StyledText'>
         <div className='text__inner'>
           <span className='ActionText2'>Hi! I'm Sang Hyuk Lee</span>
           <div className='splitStar'>
@@ -84,7 +68,6 @@ function FirstSection() {
           </div>
         </div>
       </Text>
-      <CircleGroup ref={circleGroupRef} className='CircleGroup' />
     </Container1>
   );
 }

@@ -122,7 +122,6 @@ const CardText = styled.span`
 const CardTitle = styled.span`
     font-family: "Poppins", "Pretendard";
     font-size: 34px;
-    border: 1px solid red;
     margin: 20px;
 `;
 
@@ -130,8 +129,6 @@ const CardSub = styled.span`
     font-family: "Poppins";
     font-size: 20px;
     margin: 20px;
-    border: 1px solid red;
-
 `;
 
 export default FourSection;

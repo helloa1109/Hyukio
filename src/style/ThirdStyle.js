@@ -38,7 +38,7 @@ export const TextWrapper = styled.div`
   span:first-child {
     font-weight: 600;
     font-size: 3.75rem; /* 60px */
-    letter-spacing: 1.5rem; /* 30px */
+    letter-spacing: 3rem; /* 30px */
   }
 
   span:nth-child(2) {
